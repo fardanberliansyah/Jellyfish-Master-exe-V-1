@@ -1,0 +1,20 @@
+{
+  "name": "jellyfish-master",
+  "productName": "Jellyfish Master",
+  "version": "16.0.0",
+  "description": "Jellyfish Master - belajar bahasa Jepang",
+  "main": "main.js",
+  "author": "Jellyfish",
+  "scripts": { "start": "electron ." },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.jellyfish.master",
+    "productName": "Jellyfish Master",
+    "files": ["main.js", "index.html"],
+    "directories": { "buildResources": "build" },
+    "win": { "icon": "build/icon.png", "target": ["nsis", "portable"] }
+  }
+}
